@@ -18,6 +18,7 @@ public class ValTotalTriggerHandler{
     // Busca o valor total do produtoc
     public static List<Product2> retValProduto(Decimal Val, id idprod, Integer index){
         List<Product2> novoProduto = [select id, Val_tot__c from Product2 where id =: idprod];
+        
         if (novoProduto.get(index).Val_tot__c != null){
             novoProduto.get(index).Val_tot__c += Val;
         }else {
