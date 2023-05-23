@@ -1,5 +1,5 @@
 ({
-    myAction : function(component, event, helper) {
-
+    gravaNome : function(component, event, helper) {
+      
     }
 })
