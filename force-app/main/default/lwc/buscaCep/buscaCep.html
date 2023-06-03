@@ -1,0 +1,26 @@
+<template>
+    <lightning-card title="Consulta CEP">
+        <div class="busCep">
+            <div>
+                <lightning-input 
+                    type="text" 
+                    label="CEP:" 
+                    class="format" 
+                    placeholder="Digite o CEP" 
+                    id="cep" 
+                    maxlength="9"
+                    onchange={gravText}>
+                </lightning-input>
+                <br/>
+                <lightning-button 
+                    label="Buscar" 
+                    title="Cep." 
+                    variant="brand" 
+                    onclick={searchCpf}
+                ></lightning-button>
+            </div>
+            <br/>
+            <font color="red"><p>{end}</p></font>
+        </div>
+    </lightning-card>
+</template>
