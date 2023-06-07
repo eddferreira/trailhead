@@ -1,5 +1,4 @@
 public class IntegracaoViaCEP {
-    
     @InvocableMethod(Label='Busca CEP' description='Realiza integração com ViaCEP para retornar informações detalhadas')
     public static List<ViaCEP> getCEP(List<String> cepsStr) { 
         List<ViaCEP> returnValue = new List<ViaCEP>();
@@ -26,31 +25,6 @@ public class IntegracaoViaCEP {
         }
 
         return null;
-    }
-
-    public class ViaCEP {
-        @InvocableVariable
-        public String cep;
-        @InvocableVariable
-        public String logradouro;
-        @InvocableVariable
-        public String complemento;
-        @InvocableVariable
-        public String bairro;
-        @InvocableVariable
-        public String localidade;
-        @InvocableVariable
-        public String uf;
-        @InvocableVariable
-        public String unidade;
-        @InvocableVariable
-        public String ibge;
-        @InvocableVariable
-        public String gia;
-        @InvocableVariable
-        public String ddd;
-        @InvocableVariable
-        public Boolean erro;
     }
 }
 
